@@ -27,9 +27,8 @@ This guide explains how to deploy the frontend (React) and backend (Node.js/Expr
 
 ## Deployment Architecture
 **Flow:**
-User → Cloudflare DNS → AWS ALB (80/443)
+User → Cloudflare DNS → Frontend tg -> AWS ALB (80/443)
 ├── /api/* → Backend TG (port 3000, Node.js via Nginx)
-└── /* → Frontend TG (port 3000, React build via Nginx)
 ↓
 MongoDB Atlas (Database Layer)
 
