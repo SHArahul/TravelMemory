@@ -1,4 +1,4 @@
-# TravelMemory Full-Stack Deployment (MERN) with AWS Load Balancer & Auto Scaling
+# TravelMemory Full-Stack Deployment (MERN) with AWS Load Balancer & Auto Scaling.
 
 ## Introduction
 The **Travel Memory** application is a MERN stack project that allows users to store and share travel memories.  
