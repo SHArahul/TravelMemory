@@ -1,5 +1,5 @@
 pipeline {
-    agent any
+    agent { label 'rahul-jenkins' }
     stages {
         stage('Checkout') {
             steps {
@@ -19,4 +19,5 @@ pipeline {
     }
 
 }
+
 
