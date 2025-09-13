@@ -1,5 +1,5 @@
 pipeline {
-    agent { node 'rahul-b12' }
+    agent { label 'rahul-b12' }
     stages {
         stage('Checkout') {
             steps {
@@ -19,6 +19,7 @@ pipeline {
     }
 
 }
+
 
 
 
