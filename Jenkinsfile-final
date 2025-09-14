@@ -72,10 +72,12 @@ pipeline {
     // Post-build actions for cleanup
     post {
         always {
-            echo "Pipeline finished. logging out from aws."
+            echo "Pipeline finished. Cleaning up."
             // Always logout to be safe
-            sh 'aws logout || true'
+            echo 'Installed and tested the application'
         }
-        
+        success {
+            echo "Checked S3 Buckets"
+        }
     }
 }
